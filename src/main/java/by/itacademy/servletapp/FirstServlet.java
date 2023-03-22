@@ -30,7 +30,7 @@ public class FirstServlet extends HttpServlet {
         resp.setHeader("MYHEADER", "Hi");;
 
         String param1 = req.getParameter("param1");
-
+        String param2 = req.getParameter("param1");
         String[] ages = req.getParameterValues("age");
         Map<String, String[]> parameterMap = req.getParameterMap();
         try (PrintWriter writer = resp.getWriter();){
