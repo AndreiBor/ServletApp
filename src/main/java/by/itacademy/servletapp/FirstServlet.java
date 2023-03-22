@@ -51,7 +51,7 @@ public class FirstServlet extends HttpServlet {
         PrintWriter writer = resp.getWriter();
         writer.println("<h2>" + req.getParameter("name") + "</h2>");
         writer.println("<h2>" + req.getParameter("pwd") + "</h2>");
-
+        writer.println("<h2>" + req.getParameter("pwd2") + "</h2>");
         writer.println("<form action=\"second\" method=\"POST\">");
         writer.println("Курс: <input type=\"text\" name=\"course\">");
         writer.println("<input type=\"submit\" value=\"отправить\">");
