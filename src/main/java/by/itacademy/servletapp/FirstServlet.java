@@ -31,6 +31,7 @@ public class FirstServlet extends HttpServlet {
 
         String param1 = req.getParameter("param1");
         String param2 = req.getParameter("param1");
+        String param3 = req.getParameter("param1");
         String[] ages = req.getParameterValues("age");
         Map<String, String[]> parameterMap = req.getParameterMap();
         try (PrintWriter writer = resp.getWriter();){
